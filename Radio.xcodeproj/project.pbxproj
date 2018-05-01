@@ -12,6 +12,9 @@
 		CE157E832098D6A300086454 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE157E812098D6A300086454 /* Main.storyboard */; };
 		CE157E852098D6A500086454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE157E842098D6A500086454 /* Assets.xcassets */; };
 		CE157E882098D6A500086454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE157E862098D6A500086454 /* LaunchScreen.storyboard */; };
+		CE157E902098DC7400086454 /* REST.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE157E8F2098DC7400086454 /* REST.swift */; };
+		CE157E932098DD1500086454 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE157E922098DD1500086454 /* Program.swift */; };
+		CE157E952098DD7A00086454 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE157E942098DD7A00086454 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		CE157E842098D6A500086454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE157E872098D6A500086454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE157E892098D6A500086454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE157E8F2098DC7400086454 /* REST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REST.swift; sourceTree = "<group>"; };
+		CE157E922098DD1500086454 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		CE157E942098DD7A00086454 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 		CE157E7C2098D6A300086454 /* Radio */ = {
 			isa = PBXGroup;
 			children = (
+				CE157E912098DC8600086454 /* src */,
 				CE157E7D2098D6A300086454 /* AppDelegate.swift */,
 				CE157E7F2098D6A300086454 /* ViewController.swift */,
 				CE157E812098D6A300086454 /* Main.storyboard */,
@@ -62,6 +69,16 @@
 				CE157E892098D6A500086454 /* Info.plist */,
 			);
 			path = Radio;
+			sourceTree = "<group>";
+		};
+		CE157E912098DC8600086454 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CE157E8F2098DC7400086454 /* REST.swift */,
+				CE157E922098DD1500086454 /* Program.swift */,
+				CE157E942098DD7A00086454 /* Result.swift */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE157E932098DD1500086454 /* Program.swift in Sources */,
+				CE157E952098DD7A00086454 /* Result.swift in Sources */,
 				CE157E802098D6A300086454 /* ViewController.swift in Sources */,
+				CE157E902098DC7400086454 /* REST.swift in Sources */,
 				CE157E7E2098D6A300086454 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
