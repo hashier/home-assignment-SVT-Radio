@@ -9,5 +9,5 @@
 import Foundation
 
 internal struct Constants {
-    static let url = "http://api.sr.se/api/v2/programs?format=json&size=40"
+    static let url = "https://api.sr.se/api/v2/programs?format=json&size=40"
 }
