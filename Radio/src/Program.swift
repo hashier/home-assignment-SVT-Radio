@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+internal struct Program {
+
+}

@@ -1,5 +1,5 @@
 //
-//  REST.swift
+//  Constants.swift
 //  Radio
 //
 //  Created by Christopher Lössl on 2018-05-01.
@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+internal struct Constants {
+    static let url = "http://api.sr.se/api/v2/programs?format=json&size=40"
+}
