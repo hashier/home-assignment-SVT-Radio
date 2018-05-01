@@ -19,10 +19,9 @@ internal class RESTClient {
             let requestResult = Result(value: responseData, error: error)
             switch requestResult {
             case .success(let data):
-                print(data)
                 let dict = RESTClient.decode(Outer.self, from: data)
                 if case .success(let dict) = dict {
-                    print(dict)
+                    completion(.success(dict.programs))
                 }
             case .failure(let msg):
                 let error = NSError(domain: "Network", code: 1,

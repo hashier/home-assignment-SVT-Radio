@@ -14,9 +14,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         RESTClient().getProgram { (res) in
-            print(res)
+            switch res {
+            case .success(let progs):
+                for (i, prog) in progs.enumerated() {
+                    print(i, prog.name)
+                }
+            case .failure(let e):
+                print(e)
+            }
         }
     }
 
 }
-
