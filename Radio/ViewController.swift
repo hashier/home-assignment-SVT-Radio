@@ -13,12 +13,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        RESTClient().getProgram { (res) in
-            switch res {
-            case .success(let progs):
-                for (i, prog) in progs.enumerated() {
+        RESTClient().getTimetable { (timetableResult) in
+            switch timetableResult {
+            case .success(let timetable):
+                for (i, prog) in timetable.programs.enumerated() {
                     print(i, prog.name)
                 }
+                print("Showing \(timetable.pagination.size) of \(timetable.pagination.total)")
             case .failure(let e):
                 print(e)
             }

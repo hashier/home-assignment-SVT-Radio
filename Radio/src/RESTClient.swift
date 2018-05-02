@@ -14,14 +14,14 @@ internal class RESTClient {
         return URLSession(configuration: URLSessionConfiguration.default)
     }()
 
-    internal func getProgram(_ completion: @escaping (Result<[Program]>) -> Void) {
+    internal func getTimetable(_ completion: @escaping (Result<Timetable>) -> Void) {
         let task = session.dataTask(with: URL(string: Constants.url)!) { (responseData, response, error) in
             let requestResult = Result(value: responseData, error: error)
             switch requestResult {
             case .success(let data):
-                let dict = RESTClient.decode(Outer.self, from: data)
-                if case .success(let dict) = dict {
-                    completion(.success(dict.programs))
+                let decodeResult = RESTClient.decode(Timetable.self, from: data)
+                if case .success(let timetable) = decodeResult {
+                    completion(.success(timetable))
                 }
             case .failure(let msg):
                 let error = NSError(domain: "Network", code: 1,
@@ -40,7 +40,7 @@ private extension RESTClient {
     private static func decode<T: Decodable>(_ type: T.Type, from data: Data) -> Result<T> {
         do {
             let responseObject = try jsonDecoder.decode(T.self, from: data)
-            return Result(value: responseObject, error: nil)
+            return .success(responseObject)
         } catch let parseError {
             print("Error: \(parseError)")
             let error = NSError(domain: "Decode", code: 1,
