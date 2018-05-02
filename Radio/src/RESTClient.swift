@@ -20,9 +20,7 @@ internal class RESTClient {
             switch requestResult {
             case .success(let data):
                 let decodeResult = RESTClient.decode(Timetable.self, from: data)
-                if case .success(let timetable) = decodeResult {
-                    completion(.success(timetable))
-                }
+                completion(decodeResult)
             case .failure(let msg):
                 let error = NSError(domain: "Network", code: 1,
                                     userInfo: [NSLocalizedDescriptionKey: "Network: \(msg)"])
