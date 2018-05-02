@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CE157E7E2098D6A300086454 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE157E7D2098D6A300086454 /* AppDelegate.swift */; };
-		CE157E802098D6A300086454 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE157E7F2098D6A300086454 /* ViewController.swift */; };
 		CE157E832098D6A300086454 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE157E812098D6A300086454 /* Main.storyboard */; };
 		CE157E852098D6A500086454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE157E842098D6A500086454 /* Assets.xcassets */; };
 		CE157E882098D6A500086454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE157E862098D6A500086454 /* LaunchScreen.storyboard */; };
@@ -17,12 +16,15 @@
 		CE157E952098DD7A00086454 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE157E942098DD7A00086454 /* Result.swift */; };
 		CE157E972098E17700086454 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE157E962098E17700086454 /* Constants.swift */; };
 		CE157E9C209A282E00086454 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE157E9B209A282E00086454 /* SDWebImage.framework */; };
+		CE157E9F209A2B1200086454 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE157E9E209A2B1200086454 /* DetailViewController.swift */; };
+		CE157EA1209A2B3400086454 /* ProgramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE157EA0209A2B3400086454 /* ProgramTableViewCell.swift */; };
+		CE157EA3209A2F6700086454 /* ProgramTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE157EA2209A2F6700086454 /* ProgramTableViewController.swift */; };
+		CE157EA5209A556D00086454 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE157EA4209A556D00086454 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE157E7A2098D6A300086454 /* Radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE157E7D2098D6A300086454 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE157E7F2098D6A300086454 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE157E822098D6A300086454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE157E842098D6A500086454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE157E872098D6A500086454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +34,10 @@
 		CE157E942098DD7A00086454 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		CE157E962098E17700086454 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE157E9B209A282E00086454 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
+		CE157E9E209A2B1200086454 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CE157EA0209A2B3400086454 /* ProgramTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramTableViewCell.swift; sourceTree = "<group>"; };
+		CE157EA2209A2F6700086454 /* ProgramTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramTableViewController.swift; sourceTree = "<group>"; };
+		CE157EA4209A556D00086454 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +74,6 @@
 			children = (
 				CE157E912098DC8600086454 /* src */,
 				CE157E7D2098D6A300086454 /* AppDelegate.swift */,
-				CE157E7F2098D6A300086454 /* ViewController.swift */,
 				CE157E812098D6A300086454 /* Main.storyboard */,
 				CE157E842098D6A500086454 /* Assets.xcassets */,
 				CE157E862098D6A500086454 /* LaunchScreen.storyboard */,
@@ -80,6 +85,10 @@
 		CE157E912098DC8600086454 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				CE157EA4209A556D00086454 /* Helper.swift */,
+				CE157EA2209A2F6700086454 /* ProgramTableViewController.swift */,
+				CE157E9E209A2B1200086454 /* DetailViewController.swift */,
+				CE157EA0209A2B3400086454 /* ProgramTableViewCell.swift */,
 				CE157E8F2098DC7400086454 /* RESTClient.swift */,
 				CE157E922098DD1500086454 /* Timetable.swift */,
 				CE157E942098DD7A00086454 /* Result.swift */,
@@ -187,12 +196,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE157EA3209A2F6700086454 /* ProgramTableViewController.swift in Sources */,
+				CE157EA1209A2B3400086454 /* ProgramTableViewCell.swift in Sources */,
 				CE157E932098DD1500086454 /* Timetable.swift in Sources */,
 				CE157E952098DD7A00086454 /* Result.swift in Sources */,
-				CE157E802098D6A300086454 /* ViewController.swift in Sources */,
 				CE157E902098DC7400086454 /* RESTClient.swift in Sources */,
+				CE157EA5209A556D00086454 /* Helper.swift in Sources */,
 				CE157E7E2098D6A300086454 /* AppDelegate.swift in Sources */,
 				CE157E972098E17700086454 /* Constants.swift in Sources */,
+				CE157E9F209A2B1200086454 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
